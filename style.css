@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+  }
+  html, body{
+    height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--Violet);
+    background-image: url('./images/bg-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+  }
+  
+
+.logo {
+  width: 19vw;
+  max-width: 15rem;
+  display: block;
+  margin-left: 4vw;
+  margin-top: 4vh;
+ 
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  
+}
+
+
+
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2vh;
+}
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 100%;
+  padding: 3vw 6vw 1vw 3vw;
+
+}
+
+.imagen img {
+  width: 100%;
+  
+}
+
+.seccionTitulosBoton {
+  padding-right: 4vw;
+  padding-top: 8vh;
+  padding-bottom: 8vw;
+  width: 40%;
+
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 2.6em;
+  color: white;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: white;
+  padding: 2rem 0;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: var(--Violet);
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 4px 9px 25px -7px rgba(0,0,0,0.69);
+}
+
+.button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+  cursor: pointer;
+}
+
+/* Quitar la sombra predeterminada en Chrome */
+
+
+
+.facebook, .instagram, .twiter{
+  border: 1px solid white;
+  font-size: 1.3rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .3rem;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twiter:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 1200px){
+  .principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagen {
+    padding: 2rem;
+  width: 100%;
+    height: auto;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  .seccionTitulosBoton {
+    padding: 2rem 2rem 4rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 1vh;
+  }
+
+  h1, p{
+    text-align: center;
+  }
+ .logo {
+  min-width: 10rem;
+ }
+ body {
+  background-image: url('./images/bg-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
